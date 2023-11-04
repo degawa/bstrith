@@ -30,8 +30,8 @@ contains
                 ! 0 .and. 1 = 0
                 ! 1 .and. 0 = 0
                 ! 1 .and. 1 = 1
-                select case (a(digit:digit) == number_symbols(1) .and. &
-                             b(digit:digit) == number_symbols(1))
+                select case ((a(digit:digit) == number_symbols(1)) .and. &
+                             (b(digit:digit) == number_symbols(1)))
                 case (.true.)
                     c(digit:digit) = number_symbols(1)
                 case (.false.)
