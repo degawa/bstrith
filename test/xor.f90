@@ -8,8 +8,8 @@ program test_xor
     b = "11101010"
     c = xor(a, b)
     if (c == "11000111") then
-        print '(A)', "✅PASSED: '00101101' xor '11101010' = "//c
+        print '(A)', "✅PASSED: expected '00101101' .xor. '11101010' = "//c
     else
-        print '(A)', "🔥FAILED: expected 11000111 but got "//c
+        print '(A)', "🔥FAILED: expected '00101101' .xor. '11101010' = '11000111' but got "//c
     end if
 end program test_xor
